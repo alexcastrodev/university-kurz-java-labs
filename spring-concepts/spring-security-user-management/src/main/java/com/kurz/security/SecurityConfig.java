@@ -11,6 +11,6 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 @EnableWebSecurity
 public class SecurityConfig {
 
-    // TODO: Implement security configuration methods
+    // TODO-03 (optional): Implement security configuration methods
 
 }

@@ -45,6 +45,6 @@ mvn test
 
 ## Bonus
 
-- BONUS-00: Use the `User` builder class from Spring Security for quick prototyping
-- BONUS-01: Create multiple authorities and explore different privilege levels
-- BONUS-02: Implement a decorator pattern with `SecurityUser` wrapping a JPA entity
+- TODO-03 (optional): Use the `User` builder class from Spring Security for quick prototyping
+- TODO-04 (optional): Create multiple authorities and explore different privilege levels
+- TODO-05 (optional): Implement a decorator pattern with `SecurityUser` wrapping a JPA entity

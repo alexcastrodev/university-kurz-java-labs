@@ -76,6 +76,29 @@ All must return `true` for authentication to succeed.
 
 3. **In-memory storage**: Perfect for testing and demos, but real applications use database-backed implementations like `JdbcUserDetailsManager`.
 
+## Advanced Topics (Optional)
+
+### TODO-03 (optional): SecurityConfig
+
+See `SecurityConfig.java` for a complete example of:
+- Using Spring's `User` builder for quick prototyping
+- Creating an in-memory `UserDetailsService` with `InMemoryUserDetailsManager`
+- Configuring HTTP security with role-based authorization
+
+### TODO-04 (optional): AuthorityExample
+
+See `AuthorityExample.java` for examples of:
+- Creating users with different privilege levels (basic user, admin, moderator, guest)
+- Combining role-based authorities (`ROLE_*`) with permission-based authorities
+- Demonstrating hierarchy: admin has more permissions than regular users
+
+### TODO-05 (optional): SecurityUser
+
+See `SecurityUser.java` for a decorator pattern implementation:
+- Wraps `SimpleUser` without modifying the original class
+- Separates persistence concerns (JPA entity) from security concerns (UserDetails)
+- Can add custom security logic (e.g., role enrichment, permission checking)
+
 ## Summary
 
 - Implement `UserDetails` to represent a user in Spring Security

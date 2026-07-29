@@ -131,16 +131,30 @@ Prefer:
 
 ---
 
-# BONUS Convention
+# Optional Tasks Convention
 
-Optional challenges use the `BONUS` prefix.
+Optional challenges use the `TODO` prefix with `(optional)` marker.
 
 ```java
-// BONUS-00: Solve using Arrays.equals().
-// BONUS-01: Compare the performance of both implementations.
+// TODO-03 (optional): Solve using Arrays.equals().
+// TODO-04 (optional): Compare the performance of both implementations.
 ```
 
-BONUS tasks should never be required for the lab to pass.
+Guidelines:
+
+- Continue numbering sequentially from required TODOs
+- Mark with `(optional)` to indicate they are not required
+- Optional tasks should never be required for the lab to pass
+- Implement optional tasks in the solution project for students to review
+
+In the README, mark them clearly:
+
+```markdown
+## Bonus (Optional)
+
+- TODO-03 (optional): Task description
+- TODO-04 (optional): Task description
+```
 
 ---
 
@@ -226,9 +240,10 @@ Complete the following TODOs:
 
 Run the tests until they all pass.
 
-## Bonus
+## Bonus (Optional)
 
-Optional challenges.
+- TODO-03 (optional): Optional challenge
+- TODO-04 (optional): Optional challenge
 ```
 
 ---
@@ -269,8 +284,11 @@ Requirements:
 - readable implementation
 - minimal comments
 - explanation in the README
+- all optional tasks (TODO-xx (optional)) fully implemented for student review
 
 When appropriate, demonstrate multiple valid solutions, highlighting the most idiomatic approach.
+
+Students can compare their optional implementations with the solution to learn alternative approaches.
 
 ---
 
