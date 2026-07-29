@@ -16,7 +16,7 @@ public class InMemoryUserDetailsService implements UserDetailsService {
     public InMemoryUserDetailsService(List<UserDetails> users) {
         // TODO-02: Store the provided list of users.
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        this.users = users;
     }
 
     @Override
@@ -24,6 +24,9 @@ public class InMemoryUserDetailsService implements UserDetailsService {
         // TODO-02: Search for a user with the given username in the users list.
         // If found, return the user. If not found, throw UsernameNotFoundException.
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return this.users.stream()
+                .filter(user -> user.getUsername().equals(username))
+                .findFirst()
+                .orElseThrow(() -> new UsernameNotFoundException("User not found bro"));
     }
 }
