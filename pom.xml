@@ -18,6 +18,31 @@
         <module>java-minute/array-equality-solution</module>
         <module>spring-concepts/spring-security-user-management</module>
         <module>spring-concepts/spring-security-user-management-solution</module>
+
+        <module>java-concepts/iterator-vs-iterable</module>
+        <module>java-concepts/iterator-vs-iterable-solution</module>
+        <module>java-concepts/pattern-matching</module>
+        <module>java-concepts/pattern-matching-solution</module>
+        <module>java-concepts/collection-interface</module>
+        <module>java-concepts/collection-interface-solution</module>
+        <module>java-concepts/list-interface</module>
+        <module>java-concepts/list-interface-solution</module>
+        <module>java-concepts/set-interface</module>
+        <module>java-concepts/set-interface-solution</module>
+        <module>java-concepts/queue-interface</module>
+        <module>java-concepts/queue-interface-solution</module>
+        <module>java-concepts/deque-interface</module>
+        <module>java-concepts/deque-interface-solution</module>
+        <module>java-concepts/generics</module>
+        <module>java-concepts/generics-solution</module>
+        <module>java-concepts/records-and-sealed-types</module>
+        <module>java-concepts/records-and-sealed-types-solution</module>
+        <module>java-concepts/comparators-and-collection-algorithms</module>
+        <module>java-concepts/comparators-and-collection-algorithms-solution</module>
+        <module>java-concepts/httpclient-and-java-net-http</module>
+        <module>java-concepts/httpclient-and-java-net-http-solution</module>
+        <module>java-concepts/regular-expressions</module>
+        <module>java-concepts/regular-expressions-solution</module>
     </modules>
 
     <properties>
