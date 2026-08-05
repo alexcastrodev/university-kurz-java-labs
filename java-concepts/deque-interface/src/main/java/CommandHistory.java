@@ -72,13 +72,7 @@ public class CommandHistory {
      */
     public List<String> oldestFirst() {
         // TODO-04 (optional): Return the commands in the deque's natural order.
-        Iterator<String> seqs = commands.iterator();
-        List<String> oldest = new ArrayList<>();
-        while (seqs.hasNext()) {
-            oldest.add(seqs.next());
-        }
-
-        return oldest;
+        return new ArrayList<>(commands);
     }
 
     public int size() {
