@@ -5,7 +5,6 @@ import java.util.Iterator;
 import java.util.List;
 
 public class CommandHistory {
-
     private final Deque<String> commands = new ArrayDeque<>();
     private final int capacity;
 
@@ -23,7 +22,12 @@ public class CommandHistory {
         // oldest one. Hint: which end holds the oldest command? Which Deque method
         // removes from that end without throwing if it happens to be empty?
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        if (commands.size() < capacity) {
+            commands.addLast(command);
+        } else {
+            commands.removeFirst();
+            commands.addLast(command);
+        }
     }
 
     /**
@@ -35,7 +39,7 @@ public class CommandHistory {
         // most recent one. Use the version of the method that returns null on an
         // empty deque instead of throwing.
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return commands.pollLast();
     }
 
     /**
@@ -45,7 +49,7 @@ public class CommandHistory {
     public String peekMostRecent() {
         // TODO-02: Look, don't remove.
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return commands.peekLast();
     }
 
     /**
@@ -54,8 +58,13 @@ public class CommandHistory {
     public List<String> mostRecentFirst() {
         // TODO-03: Build a List by walking the deque from the newest command to
         // the oldest. Hint: Deque has an iterator for exactly this direction.
+        Iterator<String> seqs = commands.descendingIterator();
+        List<String> recents = new ArrayList<>();
+        while (seqs.hasNext()) {
+            recents.add(seqs.next());
+        }
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return recents;
     }
 
     /**
@@ -63,8 +72,13 @@ public class CommandHistory {
      */
     public List<String> oldestFirst() {
         // TODO-04 (optional): Return the commands in the deque's natural order.
+        Iterator<String> seqs = commands.iterator();
+        List<String> oldest = new ArrayList<>();
+        while (seqs.hasNext()) {
+            oldest.add(seqs.next());
+        }
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return oldest;
     }
 
     public int size() {
