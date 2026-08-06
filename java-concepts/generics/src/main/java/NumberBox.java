@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.NoSuchElementException;
 
@@ -9,7 +10,7 @@ public class NumberBox<T extends Number & Comparable<T>> {
     public void add(T item) {
         // TODO-00: Add the item to the internal list.
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        items.add(item);
     }
 
     /**
@@ -19,7 +20,7 @@ public class NumberBox<T extends Number & Comparable<T>> {
         // TODO-01: Add up every item's numeric value.
         // Hint: T is bounded by Number, so every item has a doubleValue().
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return items.stream().mapToDouble(Number::doubleValue).sum();
     }
 
     /**
@@ -31,8 +32,18 @@ public class NumberBox<T extends Number & Comparable<T>> {
         // TODO-02: Find the largest item using compareTo(). Throw
         // new NoSuchElementException("box is empty") if there are no items.
         // Hint: T is bounded by Comparable<T>, so items can be compared directly.
+        if (items.isEmpty()) {
+            throw new NoSuchElementException("box is empty");
+        }
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        T max = items.getFirst();
+        for (T item : items) {
+            if (item.compareTo(max) > 0) {
+                max = item;
+            }
+        }
+
+        return max;
     }
 
     /**
@@ -46,7 +57,7 @@ public class NumberBox<T extends Number & Comparable<T>> {
         // TODO-03: Copy every element from source into destination, in order.
         // Hint: this is the PECS pattern — Producer Extends, Consumer Super.
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        destination.addAll(source);
     }
 
     /**
@@ -55,6 +66,6 @@ public class NumberBox<T extends Number & Comparable<T>> {
     public static <T extends Comparable<T>> boolean isIn(T x, T[] values) {
         // TODO-04 (optional): Search the array for a value equal to x.
 
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return Arrays.stream(values).anyMatch(v -> v.compareTo(x) == 0);
     }
 }
