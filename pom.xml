@@ -43,6 +43,42 @@
         <module>java-concepts/httpclient-and-java-net-http-solution</module>
         <module>java-concepts/regular-expressions</module>
         <module>java-concepts/regular-expressions-solution</module>
+        <module>java-concepts/lambda-expressions</module>
+        <module>java-concepts/lambda-expressions-solution</module>
+        <module>java-concepts/stream-api-fundamentals</module>
+        <module>java-concepts/stream-api-fundamentals-solution</module>
+        <module>java-concepts/thread-model-legacy-vs-virtual-threads</module>
+        <module>java-concepts/thread-model-legacy-vs-virtual-threads-solution</module>
+        <module>java-concepts/nio2-path-and-files-api</module>
+        <module>java-concepts/nio2-path-and-files-api-solution</module>
+        <module>java-concepts/io-streams-fundamentals</module>
+        <module>java-concepts/io-streams-fundamentals-solution</module>
+        <module>java-concepts/annotations-in-java</module>
+        <module>java-concepts/annotations-in-java-solution</module>
+        <module>java-concepts/java-lang-essential-utility-types</module>
+        <module>java-concepts/java-lang-essential-utility-types-solution</module>
+        <module>java-concepts/jshell-repl</module>
+        <module>java-concepts/jshell-repl-solution</module>
+        <module>java-concepts/sockets-and-raw-http-anatomy</module>
+        <module>java-concepts/sockets-and-raw-http-anatomy-solution</module>
+        <module>java-concepts/classpath-scanning-via-reflection</module>
+        <module>java-concepts/classpath-scanning-via-reflection-solution</module>
+        <module>java-concepts/http-sessions-under-the-hood</module>
+        <module>java-concepts/http-sessions-under-the-hood-solution</module>
+        <module>java-concepts/array-list</module>
+        <module>java-concepts/array-list-solution</module>
+        <module>java-concepts/linked-list</module>
+        <module>java-concepts/linked-list-solution</module>
+        <module>java-concepts/hash-set</module>
+        <module>java-concepts/hash-set-solution</module>
+        <module>java-concepts/linked-hash-set</module>
+        <module>java-concepts/linked-hash-set-solution</module>
+        <module>java-concepts/tree-set</module>
+        <module>java-concepts/tree-set-solution</module>
+        <module>java-concepts/priority-queue</module>
+        <module>java-concepts/priority-queue-solution</module>
+        <module>java-concepts/array-deque</module>
+        <module>java-concepts/array-deque-solution</module>
 
         <module>testing-concepts/junit-5-fundamentals</module>
         <module>testing-concepts/junit-5-fundamentals-solution</module>
