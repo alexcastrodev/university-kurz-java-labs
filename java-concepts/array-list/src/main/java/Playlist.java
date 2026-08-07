@@ -6,19 +6,19 @@ public class Playlist {
 
     public void addTrack(String track) {
         // TODO-00: Append `track` to the end of the playlist.
-        throw new UnsupportedOperationException("Not implemented yet.");
+        tracks.add(track);
     }
 
     public void insertAt(int index, String track) {
         // TODO-01: Insert `track` at `index`, shifting everything at and after
         // that index one position later.
-        throw new UnsupportedOperationException("Not implemented yet.");
+        tracks.add(index, track);
     }
 
     public void removeAt(int index) {
         // TODO-02: Remove the track at `index`, shifting everything after it
         // one position earlier.
-        throw new UnsupportedOperationException("Not implemented yet.");
+        tracks.remove(index);
     }
 
     public int size() {
@@ -31,12 +31,12 @@ public class Playlist {
 
     public String[] toArray() {
         // TODO-03: Return the tracks as a String[] (not Object[]).
-        throw new UnsupportedOperationException("Not implemented yet.");
+        return tracks.toArray(String[]::new);
     }
 
     public void prepareForBulkLoad(int expectedTotal) {
         // TODO-04 (optional): Hint to the underlying ArrayList that roughly
         // `expectedTotal` tracks are coming, to avoid repeated reallocation.
-        throw new UnsupportedOperationException("Not implemented yet.");
+        tracks.ensureCapacity(expectedTotal);
     }
 }
